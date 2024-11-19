@@ -1,5 +1,4 @@
-
-/* estilos generales */ 
+/* estilos generales */
 
 p {
   color: #000;
@@ -14,7 +13,7 @@ h2 {
   margin-top: 100px;
 }
 
-h3{
+h3 {
   font-size: 14px;
 }
 
@@ -23,12 +22,14 @@ h4 {
   font-size: 25px;
   margin-left: 50px;
   margin-bottom: 50px;
- 
+
 }
-/* Contenedor del header */ 
+
+/* Contenedor del header */
 
 header {
-  background-color: rgba(240, 248, 18, 0.7); /* Fondo amarillo */
+  background-color: rgba(240, 248, 18, 0.7);
+  /* Fondo amarillo */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,8 +42,8 @@ header {
 
 .logo-container {
   display: flex;
-  justify-content: flex-start; 
-  align-items: center; 
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
 }
 
@@ -51,15 +52,15 @@ header {
 .navegador nav {
   width: 100%;
   display: flex;
-  justify-content: flex-end; 
- 
+  justify-content: flex-end;
+
 }
 
 /* Lista de elementos del menú */
 
 nav ul.nav-links {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -84,7 +85,7 @@ nav ul.nav-links li a {
 /* Efecto hover en los enlaces */
 
 nav ul.nav-links li a:hover {
-  background-color: rgba(0, 0, 0, 0.1); 
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
@@ -100,14 +101,15 @@ nav ul.nav-links li a:hover {
 
 #carouselExampleIndicators {
   position: relative;
-  z-index: 1; /
+  z-index: 1;
 }
 
 
 body {
   overflow-x: hidden;
 }
-footer{
+
+footer {
   width: 100%
 }
 
@@ -116,20 +118,20 @@ footer{
   top: 300px;
   color: white;
   font-size: 40px;
-  margin-left: 80px; 
-  font-size: 2rem; 
+  margin-left: 80px;
+  font-size: 2rem;
   margin-bottom: 15px;
 }
 
 .mi-imagen {
   display: block;
   width: 100%;
-  height: auto; 
+  height: auto;
   margin: 0;
   padding: 0;
   max-width: 100%;
 
-  
+
 }
 
 .texto-home {
@@ -138,10 +140,10 @@ footer{
   color: white;
   text-align: center;
   font-size: 30px;
-  line-height: 1.5; 
-  margin-left: 80px; 
-  width:400px; 
-  font-size: 1rem; 
+  line-height: 1.5;
+  margin-left: 80px;
+  width: 400px;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
@@ -177,7 +179,7 @@ footer{
 
 
   .mi-boton {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     padding: 8px 16px;
   }
 }
@@ -188,7 +190,7 @@ footer{
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 40px;
-  
+
 }
 
 .image-container img {
@@ -202,7 +204,7 @@ footer{
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   padding: 20px;
 }
 
@@ -222,7 +224,7 @@ footer{
   justify-content: space-between;
   gap: 5px;
   margin-bottom: 30px;
-  
+
 }
 
 /* Título de la card */
@@ -267,16 +269,20 @@ footer{
 
 .boton-card:hover {
   background-color: rgba(245, 141, 214);
- 
+
 }
 
 /* Aseguro que el body ocupe toda la altura disponible */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
 }
 
 /* El contenido principal (sin footer) debe ocupar el espacio restante */
@@ -286,30 +292,36 @@ main {
   padding: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
 }
+
 
 /* Estilos para el footer */
 
 footer {
-  
-  font-size: 14px; 
+
+  font-size: 14px;
   width: 100%;
-  background-color: rgba(245, 141, 214, 0.5); 
-  color: rgba(8, 89, 163, 1); 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  background-color: rgba(245, 141, 214, 0.5);
+  color: rgba(8, 89, 163, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
-  margin-top: 20px;  
-  
+  margin-top: 20px;
+
 }
 
 /* Aseguro que cada sección dentro del footer tenga el mismo estilo */
 
-footer > div {
-  width: 30%; 
+footer>div {
+  width: 30%;
 }
 
 /* Estilo para los títulos de las secciones */
@@ -323,36 +335,37 @@ footer h3 {
 .redes-sociales a {
   margin: 0 10px;
   font-size: 24px;
-  color: rgba(8, 89, 163, 1); 
+  color: rgba(8, 89, 163, 1);
   text-decoration: none;
 }
 
 .redes-sociales a:hover {
-  color: rgba(28, 133, 231, 0.7); 
+  color: rgba(28, 133, 231, 0.7);
 }
 
 /* Estilos para el formulario de suscripción */
 
 .suscribite form {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
-  
-  }
+
+}
 
 .suscribite input {
-  
+
   padding: 8px;
-  margin: 10px 5px; 
-  width: 300px; 
-  height: 25px;;
+  margin: 10px 5px;
+  width: 300px;
+  height: 25px;
+  ;
   max-width: 200px;
-  
+
 }
 
 .suscribite button {
   padding: 4px;
-  background-color: rgba(8, 89, 163, 1); 
+  background-color: rgba(8, 89, 163, 1);
   color: white;
   border: none;
   cursor: pointer;
@@ -361,56 +374,36 @@ footer h3 {
 }
 
 .suscribite button:hover {
-  background-color: rgba(28, 133, 231, 0.7); 
+  background-color: rgba(28, 133, 231, 0.7);
 }
 
 /* Estilo para el ícono de WhatsApp */
 
 .tel a {
-  font-size: 80px; 
-  color: rgba(81, 185, 25, 1); 
+  font-size: 80px;
+  color: rgba(81, 185, 25, 1);
   text-decoration: none;
 }
 
 .tel a:hover {
-  color:  rgba(38, 105, 2, 0.842); /
+  color: rgba(38, 105, 2, 0.842);/
 }
-html, body {
-  height: 100%; 
-  margin: 0; 
-  display: grid; 
-  grid-template-rows: 1fr auto; 
-}
-
-main {
-  
-    margin: 0;
-    padding: 0; 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
-  }
-  
 
 .form-container {
   width: 688px;
   height: auto;
-  background-color: rgba(245, 245, 245, 1); 
-  border: 1px solid rgba(217, 217, 217, 0.7); 
+  background-color: rgba(245, 245, 245, 1);
+  border: 1px solid rgba(217, 217, 217, 0.7);
   border-radius: 8px;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center; 
+  justify-content: center;
   margin-bottom: 50px;
   margin-top: 20px;
-  
+
 }
 
 .form-container input[type="text"],
@@ -425,20 +418,19 @@ main {
   border-radius: 4px;
   margin-bottom: 15px;
   resize: none
-
 }
 
 .submit-container {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  width: 100%; 
-  margin-top: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .submit-container input[type="submit"] {
   width: 272px;
-  height: 40px; 
+  height: 40px;
   padding: 10px;
   background-color: rgba(245, 141, 214, 0.5);
   border: none;
@@ -453,21 +445,21 @@ main {
 
   /* Ajustes generales */
   main {
-    margin-top: 80px; 
+    margin-top: 80px;
   }
 
   /* Ajuste del carrusel */
   .carousel-inner img {
-    height: 200px; 
+    height: 200px;
   }
 
 
   /* Ajustes del formulario en móvil */
   .form-container {
-    width: 90%;  
-    max-width: 100%;  
-    padding: 15px;  
-    margin: 20px 0;  
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin: 20px 0;
   }
 
   .form-container input[type="text"],
@@ -475,39 +467,37 @@ main {
   .form-container input[type="tel"],
   .form-container input[type="number"],
   .form-container textarea {
-    width: 100%;  
-    max-width: 100%;  
+    width: 100%;
+    max-width: 100%;
   }
 
   .submit-container input[type="submit"] {
-    width: 90px;  
+    width: 90px;
     max-width: 100%;
   }
 
   /* Ajustes del menú y logo */
   .desktop-nav {
-    display: none;  /* Esconde el menú de escritorio */
+    display: none;
+    /* Esconde el menú de escritorio */
   }
 
   .mobile-nav {
-    display: block;  /* Muestra el menú hamburguesa */
+    display: block;
+    /* Muestra el menú hamburguesa */
   }
 
   .logo-container {
-    width: 100%;  
-    justify-content: center;  
+    width: 100%;
+    justify-content: left;
   }
 
   /* Ajuste de la barra de navegación en móvil */
-  nav ul.nav-links {
-    flex-direction: column;  
-    align-items: center;  
-    margin-top: 20px;  
-  }
+
 
   nav ul.nav-links li {
-    margin-left: 0; 
-    margin-bottom: 10px; 
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 
   nav ul.nav-links li a {
@@ -515,20 +505,9 @@ main {
     font-size: 18px;
   }
 
-  /* Ajuste de los márgenes en el header */
-  header {
-    padding: 10px 20px;  /* Reduce el padding en móvil */
-  }
 
-  /* Ajuste de la imagen */
-  .mi-imagen {
-    width: 100%;  
-  }
 
-  /* Ajuste del espaciado en el main */
-  main {
-    margin-top: 100px;  
-  }
+
 
   /* Ocultar todos los elementos del footer excepto el icono de WhatsApp */
   .enlaces-utiles,
@@ -536,71 +515,64 @@ main {
   .suscribite {
     display: none;
   }
-/* Estilo general para el footer fijo */
-.tel {
-  position: fixed;
-  bottom: 10px; /* Separación desde el borde inferior */
-  right: 10px; /* Separación desde el borde derecho */
-  z-index: 100; /* Asegura que esté encima de otros elementos */
-}
 
-.tel a {
-  font-size: 50px;
-  color: rgba(81, 185, 25, 1);
-}
-
-/* Ajuste para evitar superposición con el footer */
-@media (max-width: 768px) {
-  main {
-    margin-top: 80px;
-    padding-bottom: 80px; /* Espacio adicional para el footer */
-  }
-
-  .carousel-inner {
-    margin-bottom: 80px; /* Espacio adicional debajo del carrusel */
-  }
-}
-  /* Ajuste específico para WhatsApp */
+  /* Estilo general para el footer fijo */
   .tel {
-    position: fixed; 
+    position: fixed;
     bottom: 10px;
+    /* Separación desde el borde inferior */
     right: 10px;
-    
+    /* Separación desde el borde derecho */
+    z-index: 100;
+    /* Asegura que esté encima de otros elementos */
   }
 
   .tel a {
     font-size: 50px;
-    color: rgba(81, 185, 25, 1);; 
-    
+    color: rgba(81, 185, 25, 1);
   }
-  
+
+  /* Ajuste para evitar superposición con el footer */
+  @media (max-width: 768px) {
+    main {
+      margin-top: 100px;
+      padding-bottom: 80px;
+      /* Espacio adicional para el footer */
+    }
+
+    .carousel-inner {
+      margin-bottom: 80px;
+      /* Espacio adicional debajo del carrusel */
+    }
+  }
+
+  /* Ajuste específico para WhatsApp */
+  .tel {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+  }
+
+  .tel a {
+    font-size: 50px;
+    color: rgba(81, 185, 25, 1);
+    ;
+
+  }
+
 }
+
 /* Responsividad para móviles */
 @media screen and (max-width: 768px) {
-  .Titulo-principal {
-    font-size: 1.8rem;
-    top: 200px; 
-    color: #000;
-    
+
+  header {
+    background-color: transparent;
+    /* Elimina el fondo amarillo */
+    padding: 0;
+    /* Elimina el padding */
   }
 
-  .texto-home {
-    font-size: 1rem;
-    top: 200px;
-    color: #000;
-  }
-
-  .mi-boton {
-    font-size: 20px;
-    top: 450px;
-    height: 40px;
-    width: 150px;
-  }
-
-  .image-container img {
-    height: 150px;
-    top: 500px;
-  }
 
   .card {
     width: 100%;
@@ -618,58 +590,88 @@ main {
 /* Estilos solo para móviles */
 @media (max-width: 768px) {
   main {
-    display: grid; /* Cambiar a Grid solo en móviles */
-    grid-template-columns: 1fr; /* Una sola columna */
-    justify-items: center;
+    display: block;
+    /* Esto hace que el flujo de los elementos sea vertical */
     padding: 16px;
-    
-    
-  }
-
-  section {
-    display: grid;
-    grid-template-areas: 
-      "titulo"
-      "texto"
-      "imagen"
-      "boton";
-    gap: 16px;
+    text-align: center;
+    /* Centra el contenido */
   }
 
   .Titulo-principal {
-    grid-area: titulo;
     font-size: 24px;
-    font-weight: bold;
-    margin-top: 50px
-    
+    color: #000;
+    position: absolute;
+    top: 250px
   }
 
   .texto-home {
-    grid-area: texto;
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 100px;
-    text-align: left;
+    color: #000;
+    margin-bottom: 20px;
+    /* Espacio debajo del párrafo */
+
+    margin-left: auto;
+    margin-right: auto;
+    /* Centra el texto */
+
+    position: absolute;
+    top: 300px
   }
 
   .mi-imagen {
-    grid-area: imagen;
-    max-width: 100%;
+    display: block;
+    width: 95%;
+    max-width: 95%;
     height: auto;
     border-radius: 8px;
-    margin-top: 170px;
-    padding-bottom: 70px;
+    position: absolute;
+    top: 450px;
+    align-items: center;
+
   }
+
+
 
   .mi-boton {
-    grid-area: boton;
+    display: block;
     font-size: 14px;
-    border: none;
-    background-color:rgba(240, 248, 18, 1);
+    border: rgba(240, 248, 18, 1);
+    background-color: rgba(240, 248, 18, 1);
     color: black;
     border-radius: 20px;
-    cursor: pointer;
-    margin-top: 250px;
+    width: auto;
+    height: 40px;
+    position: absolute;
+    top: 700px;
+    
+
+
+
 
   }
+
+  .navbar-brand {
+    margin: 0;
+  }
+
+  .logo {
+    max-height: 100px;
+    /* Ajusta el tamaño del logo */
+    width: auto;
+    background-color: transparent;
+    padding: 0%;
+  }
+
+  .container-fluid {
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 430px;
+    /* Define un ancho máximo uniforme */
+    margin: 0 auto;
+    /* Centra el contenedor */
+  }
+
+
+
 }
