@@ -104,8 +104,8 @@ nav ul.nav-links li a:hover {
 }
 
 
-body{
-  width: 100%
+body {
+  overflow-x: hidden;
 }
 footer{
   width: 100%
@@ -117,6 +117,8 @@ footer{
   color: white;
   font-size: 40px;
   margin-left: 80px; 
+  font-size: 2rem; 
+  margin-bottom: 15px;
 }
 
 .mi-imagen {
@@ -125,6 +127,9 @@ footer{
   height: auto; 
   margin: 0;
   padding: 0;
+  max-width: 100%;
+
+  
 }
 
 .texto-home {
@@ -136,6 +141,8 @@ footer{
   line-height: 1.5; 
   margin-left: 80px; 
   width:400px; 
+  font-size: 1rem; 
+  margin-bottom: 15px;
 }
 
 
@@ -167,22 +174,7 @@ footer{
 .mi-boton {
   position: absolute;
 
-  
 
-
-  .Titulo-principal {
-    font-size: 2rem; 
-    margin-bottom: 15px;
-  }
-
-  .texto-home {
-    font-size: 1rem; 
-    margin-bottom: 15px;
-  }
-
-  .mi-imagen {
-    max-width: 100%; 
-  }
 
   .mi-boton {
     font-size: 1.1rem; 
