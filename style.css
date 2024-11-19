@@ -448,6 +448,10 @@ footer h3 {
     margin-top: 80px;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   /* Ajuste del carrusel */
   .carousel-inner img {
     height: 200px;
