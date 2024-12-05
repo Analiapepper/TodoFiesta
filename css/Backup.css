@@ -1,9 +1,11 @@
 /* estilos generales */
 
+
 p {
   color: #000;
   font-size: 20px;
   margin: 50px;
+  
 }
 
 h2 {
@@ -359,7 +361,7 @@ footer h3 {
 }
 
 .tel a:hover {
-  color: rgba(38, 105, 2, 0.842);/
+  color: rgba(38, 105, 2, 0.842);
 }
 
 .form-container {

@@ -1,5 +1,8 @@
-// Estilos generales del footer
-.footer {
+/* Estilos para el footer */
+
+footer {
+
+    font-size: 14px;
     width: 100%;
     background-color: rgba(245, 141, 214, 0.5);
     color: rgba(8, 89, 163, 1);
@@ -10,72 +13,75 @@
     box-sizing: border-box;
     text-align: center;
     margin-top: 20px;
-
-    // Estilos para las secciones dentro del footer
-    >div {
-        width: 30%;
-    }
-
-    // Estilos para los títulos de las secciones del footer
-    h3 {
-        margin: 10px 0;
-    }
-
-    // Estilos para los enlaces de redes sociales dentro del footer
-    .redes-sociales {
-        a {
-            margin: 0 10px;
-            font-size: 24px;
-            color: rgba(8, 89, 163, 1);
-            text-decoration: none;
-
-            &:hover {
-                color: rgba(28, 133, 231, 0.7);
-            }
-        }
-    }
-
-    // Estilos para el formulario de suscripción
-    .suscribite {
-        form {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        input {
-            padding: 8px;
-            margin: 10px 5px;
-            width: 300px;
-            height: 25px;
-            max-width: 200px;
-        }
-
-        button {
-            padding: 4px;
-            background-color: rgba(8, 89, 163, 1);
-            color: white;
-            border: none;
-            cursor: pointer;
-            width: 70px;
-            height: 25px;
-
-            &:hover {
-                background-color: rgba(28, 133, 231, 0.7);
-            }
-        }
-    }
-
-    // Estilos para el ícono de WhatsApp
-    .tel {
-        a {
-            font-size: 80px;
-            color: rgba(81, 185, 25, 1);
-            text-decoration: none;
-
-            &:hover {
-                color: rgba(38, 105, 2, 0.842);
-            }
-        }
-    }
-}
+  
+  }
+  
+  /* Aseguro que cada sección dentro del footer tenga el mismo estilo */
+  
+  footer>div {
+    width: 30%;
+  }
+  
+  /* Estilo para los títulos de las secciones */
+  
+  footer h3 {
+    margin: 10px 0;
+  }
+  
+  /* Estilos para los enlaces de redes sociales */
+  
+  .redes-sociales a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: rgba(8, 89, 163, 1);
+    text-decoration: none;
+  }
+  
+  .redes-sociales a:hover {
+    color: rgba(28, 133, 231, 0.7);
+  }
+  
+  /* Estilos para el formulario de suscripción */
+  
+  .suscribite form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .suscribite input {
+  
+    padding: 8px;
+    margin: 10px 5px;
+    width: 300px;
+    height: 25px;
+    max-width: 200px;
+  
+  }
+  
+  .suscribite button {
+    padding: 4px;
+    background-color: rgba(8, 89, 163, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+  }
+  
+  .suscribite button:hover {
+    background-color: rgba(28, 133, 231, 0.7);
+  }
+  
+  /* Estilo para el ícono de WhatsApp */
+  
+  .tel a {
+    font-size: 80px;
+    color: rgba(81, 185, 25, 1);
+    text-decoration: none;
+  }
+  
+  .tel a:hover {
+    color: rgba(38, 105, 2, 0.842);
+  }

@@ -1,4 +1,19 @@
+@use "./global/reset";
+
+@use "./Utilities/variable";
+@use "./Utilities/extend";
+@use "./Utilities/mixin";
+
+
+@use "./Pages/main-index";
+
 @use "./Components/footer";
 @use "./Components/header";
+
+
 @use "./Utilities/medias-query";
+
+
+
+
 
