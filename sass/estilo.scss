@@ -1,16 +1,13 @@
+@use "./Utilities/variable";
+@use "./Utilities/mixin";
+@use "./Utilities/extend";
+
 @use "./global/reset";
 
-@use "./Utilities/variable";
-@use "./Utilities/extend";
-@use "./Utilities/mixin";
-
+@use "./Components/header";
+@use "./Components/footer";
 
 @use "./Pages/main-index";
-
-@use "./Components/footer";
-@use "./Components/header";
-
-
 @use "./Utilities/medias-query";
 
 
