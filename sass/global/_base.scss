@@ -1,0 +1,57 @@
+* {
+    font-family: 'Lora', serif;
+    color: #3a3a3a; // Color común para texto
+}
+    h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+        margin: 40px;
+        margin-top: 100px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 25px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 50px;
+        text-align: center;
+    }
+
+    a {
+        color: #3a3a3a; // Color normal para los enlaces
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+  
+/* El contenido principal (sin footer) debe ocupar el espacio restante */
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    background-color: rgba(245, 141, 214, 0.5);
+}
+  

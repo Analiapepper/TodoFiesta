@@ -1,8 +1,28 @@
+.Titulo-principal,
+.texto-home,
+.mi-boton {
+    position: absolute;
+}
 
+.Titulo-principal,
+.texto-home {
+    color: white;
+}
 
+.Titulo-principal {
+    top: 300px;
+    margin-left: 80px;
+}
 
+.texto-home {
+    top: 400px;
+    text-align: center;
+    font-size: 30px;
+    width: 400px;
+    margin-left: 92px;
+}
 
-
-
-
-  
+.mi-imagen {
+    width: 100%;
+    height: auto;
+}

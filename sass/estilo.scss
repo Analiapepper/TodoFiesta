@@ -3,14 +3,17 @@
 @use "./Utilities/extend";
 
 @use "./global/reset";
+@use "./global/base";
+
+@use "./Pages/main-index";
+
 
 @use "./Components/header";
 @use "./Components/footer";
+@use "./Components/buttons";
+@use "./Components/cards";
+@use "./Components/forms";
 
-@use "./Pages/main-index";
+
 @use "./Utilities/medias-query";
-
-
-
-
 

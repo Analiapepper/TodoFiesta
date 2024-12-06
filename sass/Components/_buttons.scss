@@ -1,0 +1,30 @@
+.suscribite button {
+    padding: 4px;
+    background-color: rgba(8, 89, 163, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+
+    &:hover {
+        background-color: rgba(28, 133, 231, 0.7);
+    }
+}
+
+.mi-boton {
+    background-color: #f0f812;
+    border-color: #f0f812;
+    font-size: 24px;
+    border-radius: 20px;
+    height: 60px;
+    width: 260px;
+    margin-left: 150px;
+    top: 750px;
+
+    &:hover {
+        background-color: #b0b608;
+    }
+}
+
+

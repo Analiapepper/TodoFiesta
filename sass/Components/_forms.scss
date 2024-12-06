@@ -1,0 +1,55 @@
+/* Centrar solo el formulario */
+.centro-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form-container {
+  width: 688px;
+  background-color: rgba(245, 245, 245, 1);
+  border: 1px solid rgba(217, 217, 217, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0 50px;
+}
+
+/* Estilos comunes para inputs y textarea */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  max-width: 610px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.form-container textarea {
+  resize: none;
+}
+
+/* Contenedor de envío */
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Botón de envío */
+.submit-container input[type="submit"] {
+  width: 272px;
+  height: 40px;
+  padding: 10px;
+  background-color: rgba(245, 141, 214, 0.5);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
