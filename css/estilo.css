@@ -1,29 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 .footer {
   background-color: rgba(245, 141, 214, 0.5);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: "Lora", serif;
-  overflow-x: hidden;
-  background-color: white;
-}
-
-* {
-  font-family: "Lora", serif;
-  color: #3a3a3a;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
+  text-decoration: none;
 }
 
 h2 {
@@ -50,9 +32,19 @@ p {
 }
 
 a {
-  color: #3a3a3a;
-  text-decoration: none;
   font-size: 18px;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
 }
 
 .Titulo-principal,
@@ -84,10 +76,8 @@ a {
   height: auto;
 }
 
-/* Contenedor del header */
 header {
   background-color: rgba(240, 248, 18, 0.7);
-  /* Fondo amarillo */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -96,7 +86,6 @@ header {
   position: relative;
 }
 
-/* Contenedor del logo */
 .logo-container {
   display: flex;
   justify-content: flex-start;
@@ -104,14 +93,18 @@ header {
   width: 100%;
 }
 
-/* Menú de navegación */
+.logo {
+  width: auto;
+  height: 150px;
+  max-height: 150px;
+}
+
 .navegador nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-/* Lista de elementos del menú */
 nav ul.nav-links {
   display: flex;
   justify-content: flex-end;
@@ -121,26 +114,21 @@ nav ul.nav-links {
   margin-top: 150px;
 }
 
-/* Espaciado entre los elementos del menú */
 nav ul.nav-links li {
   margin-left: 30px;
 }
 
-/* Estilo de los enlaces del menú */
 nav ul.nav-links li a {
-  text-decoration: none;
   color: black;
   font-size: 18px;
   padding: 10px 15px;
 }
 
-/* Efecto hover en los enlaces */
 nav ul.nav-links li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
-/* Mostrar barra de navegación estándar en escritorio */
 .desktop-nav {
   display: flex;
 }
@@ -158,27 +146,20 @@ footer {
   box-sizing: border-box;
   text-align: center;
   margin-top: 20px;
-  /* Estilos para los enlaces de redes sociales */
-  /* Icono de WhatsApp */
-  /* Formulario de suscripción */
 }
 footer > div {
   width: 30%;
 }
-footer h3 {
-  margin: 10px 0;
-}
 footer .redes-sociales a {
   margin: 0 10px;
-  font-size: 24px !important;
+  font-size: 24px;
   color: rgb(8, 89, 163);
-  text-decoration: none;
 }
 footer .redes-sociales a:hover {
   color: rgba(28, 133, 231, 0.7);
 }
 footer .tel a {
-  font-size: 80px !important;
+  font-size: 80px;
   color: rgb(81, 185, 25);
 }
 footer .tel a:hover {
@@ -292,7 +273,6 @@ footer .suscribite input {
   margin: 20px 0 50px;
 }
 
-/* Estilos comunes para inputs y textarea */
 .form-container input,
 .form-container textarea {
   width: 100%;
@@ -307,7 +287,6 @@ footer .suscribite input {
   resize: none;
 }
 
-/* Contenedor de envío */
 .submit-container {
   display: flex;
   justify-content: center;
@@ -316,7 +295,6 @@ footer .suscribite input {
   margin-top: 20px;
 }
 
-/* Botón de envío */
 .submit-container input[type=submit] {
   width: 272px;
   height: 40px;
@@ -325,187 +303,45 @@ footer .suscribite input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
 }
 
-/* Media query para pantallas pequeñas (celulares) */
+/* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-  /* Ajustes generales */
-  main {
-    margin-top: 80px;
-    padding-bottom: 80px;
-  }
-  /* Ajuste del carrusel */
-  .carousel-inner img {
-    padding-top: 30px;
-  }
-  /* Ajustes del formulario en móvil */
-  .form-container {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
-    margin: 20px 0;
-  }
-  .form-container input[type=text],
-  .form-container input[type=email],
-  .form-container input[type=tel],
-  .form-container input[type=number],
-  .form-container textarea {
-    width: 100%;
-    max-width: 100%;
-  }
-  .titulo-card {
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-  }
-  .lista-card {
-    text-align: left;
-    font-size: 14px;
-  }
-  .submit-container input[type=submit] {
-    width: 90px;
-    max-width: 100%;
-  }
-  /* Ajustes del menú y logo */
+  /* Esconde el menú de escritorio y muestra el menú hamburguesa */
   .desktop-nav {
     display: none;
-    /* Esconde el menú de escritorio */
   }
   .mobile-nav {
     display: block;
-    /* Muestra el menú hamburguesa */
   }
-  .logo-container {
-    width: 100%;
-    justify-content: left;
-  }
-  /* Ajuste de la barra de navegación en móvil */
-  nav ul.nav-links li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-  nav ul.nav-links li a {
-    padding: 10px 15px;
-    font-size: 18px;
-  }
-  /* Ocultar todos los elementos del footer excepto el icono de WhatsApp */
+  /* Ocultar ciertos elementos del footer */
   .enlaces-utiles,
-  .redes-sociales,
   .suscribite {
     display: none;
   }
-  /* Estilo general para el footer fijo */
-  .tel {
-    position: fixed;
-    bottom: 10px;
-    /* Separación desde el borde inferior */
-    right: 10px;
-    /* Separación desde el borde derecho */
-    z-index: 100;
-    /* Asegura que esté encima de otros elementos */
-  }
-  .tel a {
-    font-size: 50px;
-    color: rgb(81, 185, 25);
-  }
-  /* Ajuste para evitar superposición con el footer */
-  /* Ajuste específico para WhatsApp */
-  .tel {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-  }
-  .tel a {
-    font-size: 50px;
-    color: rgb(81, 185, 25);
-  }
-}
-/* Responsividad para móviles */
-@media screen and (max-width: 768px) {
-  header {
-    background-color: transparent;
-    /* Elimina el fondo amarillo */
-    padding: 0;
-    /* Elimina el padding */
-  }
-  .card {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-  }
-  .boton-card {
-    width: 90px;
-    height: 40px;
-    font-size: 12px;
-  }
-}
-/* Estilos solo para móviles */
-@media (max-width: 768px) {
+  /* Ajustes para el flujo de contenido principal */
   main {
     display: block;
-    /* Esto hace que el flujo de los elementos sea vertical */
     padding: 16px;
     text-align: left;
-    /* Centra el contenido */
   }
-  .Titulo-principal {
-    font-size: 24px;
-    color: #000;
-    width: 300px;
-    margin: 40px;
-    position: absolute;
-    top: 180px;
-  }
+  .Titulo-principal,
   .texto-home {
-    font-size: 14px;
-    line-height: 1.5;
     color: #000;
+    font-size: 24px;
     width: 300px;
-    margin: 20px;
-    position: absolute;
-    top: 250px;
-  }
-  .mi-imagen {
-    display: block;
-    width: 90%;
-    max-width: width 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 80px;
-    position: absolute;
-    top: 380px;
-    align-items: center;
   }
   .mi-boton {
-    display: block;
     font-size: 14px;
-    background-color: rgb(240, 248, 18);
-    color: black;
     border-radius: 20px;
-    width: auto;
-    height: 50px;
-    position: absolute;
-    top: 600px;
-  }
-  .navbar-brand {
-    margin: 0;
   }
   .logo {
+    height: 100px;
     max-height: 100px;
-    /* Ajusta el tamaño del logo */
-    width: auto;
-    background-color: transparent;
-    padding: 0%;
-    margin: 0%;
   }
   .container-fluid {
-    width: 100%;
-    /* Asegura que el contenedor ocupe todo el ancho disponible */
-    max-width: 768px;
-    /* Define un ancho máximo uniforme */
+    width: 90%;
     margin: 0;
-    /* Centra el contenedor */
     padding: 0;
   }
 }

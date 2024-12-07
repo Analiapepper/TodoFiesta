@@ -1,8 +1,5 @@
-/* Contenedor del header */
-
 header {
   background-color: rgba(240, 248, 18, 0.7);
-  /* Fondo amarillo */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,8 +8,6 @@ header {
   position: relative;
 }
 
-/* Contenedor del logo */
-
 .logo-container {
   display: flex;
   justify-content: flex-start;
@@ -20,7 +15,11 @@ header {
   width: 100%;
 }
 
-/* Menú de navegación */
+.logo {
+  width: auto;  
+  height: 150px; 
+  max-height: 150px; 
+}
 
 .navegador nav {
   width: 100%;
@@ -28,8 +27,6 @@ header {
   justify-content: flex-end;
 
 }
-
-/* Lista de elementos del menú */
 
 nav ul.nav-links {
   display: flex;
@@ -40,29 +37,20 @@ nav ul.nav-links {
   margin-top: 150px;
 }
 
-/* Espaciado entre los elementos del menú */
-
 nav ul.nav-links li {
   margin-left: 30px;
 }
 
-/* Estilo de los enlaces del menú */
-
 nav ul.nav-links li a {
-  text-decoration: none;
   color: black;
   font-size: 18px;
   padding: 10px 15px;
 }
 
-/* Efecto hover en los enlaces */
-
 nav ul.nav-links li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-
-/* Mostrar barra de navegación estándar en escritorio */
 
 .desktop-nav {
   display: flex;

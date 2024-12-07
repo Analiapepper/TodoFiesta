@@ -8,37 +8,28 @@ footer {
   text-align: center;
   margin-top: 20px;
 
-  > div {
+  >div {
     width: 30%;
   }
 
-  h3 {
-    margin: 10px 0;
-  }
-
-  /* Estilos para los enlaces de redes sociales */
   .redes-sociales a {
     margin: 0 10px;
-    font-size: 24px !important;  // Asegura que el tamaño se aplique correctamente
+    font-size: 24px;
     color: rgba(8, 89, 163, 1);
-    text-decoration: none;
 
     &:hover {
       color: rgba(28, 133, 231, 0.7);
     }
   }
 
-  /* Icono de WhatsApp */
   .tel a {
-    font-size: 80px !important;  // Asegura que el tamaño se aplique correctamente
+    font-size: 80px;
     color: rgba(81, 185, 25, 1);
 
     &:hover {
       color: rgba(38, 105, 2, 0.842);
     }
   }
-
-  /* Formulario de suscripción */
   .suscribite {
     form {
       display: flex;
