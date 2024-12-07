@@ -55,23 +55,6 @@ a {
   font-size: 18px;
 }
 
-/* El contenido principal (sin footer) debe ocupar el espacio restante */
-main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.footer {
-  background-color: rgba(245, 141, 214, 0.5);
-}
-
 .Titulo-principal,
 .texto-home,
 .mi-boton {
@@ -101,39 +84,69 @@ main {
   height: auto;
 }
 
+/* Contenedor del header */
 header {
   background-color: rgba(240, 248, 18, 0.7);
+  /* Fondo amarillo */
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
   position: relative;
-  /* Logo Container */
-  /* Menú de navegación */
 }
-header .logo-container {
+
+/* Contenedor del logo */
+.logo-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
-header nav ul.nav-links {
+
+/* Menú de navegación */
+.navegador nav {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 0;
+}
+
+/* Lista de elementos del menú */
+nav ul.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
   margin: 0;
-}
-header nav ul.nav-links li {
-  margin-left: 30px;
+  padding: 0;
   margin-top: 150px;
-  list-style: none;
 }
-header nav ul.nav-links li a {
+
+/* Espaciado entre los elementos del menú */
+nav ul.nav-links li {
+  margin-left: 30px;
+}
+
+/* Estilo de los enlaces del menú */
+nav ul.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
   padding: 10px 15px;
 }
-header nav ul.nav-links li a:hover {
+
+/* Efecto hover en los enlaces */
+nav ul.nav-links li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
+
+/* Mostrar barra de navegación estándar en escritorio */
+.desktop-nav {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 footer {
@@ -315,14 +328,186 @@ footer .suscribite input {
   font-size: 16px;
 }
 
-/* Mostrar barra de navegación estándar en escritorio */
-.desktop-nav {
-  display: flex;
+/* Media query para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  /* Ajustes generales */
+  main {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  /* Ajuste del carrusel */
+  .carousel-inner img {
+    padding-top: 30px;
+  }
+  /* Ajustes del formulario en móvil */
+  .form-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  .form-container input[type=text],
+  .form-container input[type=email],
+  .form-container input[type=tel],
+  .form-container input[type=number],
+  .form-container textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  .titulo-card {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .lista-card {
+    text-align: left;
+    font-size: 14px;
+  }
+  .submit-container input[type=submit] {
+    width: 90px;
+    max-width: 100%;
+  }
+  /* Ajustes del menú y logo */
+  .desktop-nav {
+    display: none;
+    /* Esconde el menú de escritorio */
+  }
+  .mobile-nav {
+    display: block;
+    /* Muestra el menú hamburguesa */
+  }
+  .logo-container {
+    width: 100%;
+    justify-content: left;
+  }
+  /* Ajuste de la barra de navegación en móvil */
+  nav ul.nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  nav ul.nav-links li a {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  /* Ocultar todos los elementos del footer excepto el icono de WhatsApp */
+  .enlaces-utiles,
+  .redes-sociales,
+  .suscribite {
+    display: none;
+  }
+  /* Estilo general para el footer fijo */
+  .tel {
+    position: fixed;
+    bottom: 10px;
+    /* Separación desde el borde inferior */
+    right: 10px;
+    /* Separación desde el borde derecho */
+    z-index: 100;
+    /* Asegura que esté encima de otros elementos */
+  }
+  .tel a {
+    font-size: 50px;
+    color: rgb(81, 185, 25);
+  }
+  /* Ajuste para evitar superposición con el footer */
+  /* Ajuste específico para WhatsApp */
+  .tel {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  .tel a {
+    font-size: 50px;
+    color: rgb(81, 185, 25);
+  }
 }
-
-/* Menú de navegación móvil */
-.mobile-nav {
-  display: none;
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+  header {
+    background-color: transparent;
+    /* Elimina el fondo amarillo */
+    padding: 0;
+    /* Elimina el padding */
+  }
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .boton-card {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+/* Estilos solo para móviles */
+@media (max-width: 768px) {
+  main {
+    display: block;
+    /* Esto hace que el flujo de los elementos sea vertical */
+    padding: 16px;
+    text-align: left;
+    /* Centra el contenido */
+  }
+  .Titulo-principal {
+    font-size: 24px;
+    color: #000;
+    width: 300px;
+    margin: 40px;
+    position: absolute;
+    top: 180px;
+  }
+  .texto-home {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    width: 300px;
+    margin: 20px;
+    position: absolute;
+    top: 250px;
+  }
+  .mi-imagen {
+    display: block;
+    width: 90%;
+    max-width: width 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 380px;
+    align-items: center;
+  }
+  .mi-boton {
+    display: block;
+    font-size: 14px;
+    background-color: rgb(240, 248, 18);
+    color: black;
+    border-radius: 20px;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    top: 600px;
+  }
+  .navbar-brand {
+    margin: 0;
+  }
+  .logo {
+    max-height: 100px;
+    /* Ajusta el tamaño del logo */
+    width: auto;
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
+  }
+  .container-fluid {
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 768px;
+    /* Define un ancho máximo uniforme */
+    margin: 0;
+    /* Centra el contenedor */
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
