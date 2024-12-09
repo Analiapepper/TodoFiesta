@@ -1,5 +1,6 @@
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
+
     /* Esconde el menú de escritorio y muestra el menú hamburguesa */
     .desktop-nav {
         display: none;
@@ -19,31 +20,46 @@
     main {
         display: block;
         padding: 16px;
-        text-align: left;
+        position: relative;
+        min-height: calc(100vh - 100px);
+
     }
 
     .Titulo-principal,
-    .texto-home {
+    .texto-home,
+    .mi-imagen {
         color: #000;
-        font-size: 24px;
-        width: 300px;
+        position: absolute;
+    }
+
+    .Titulo-principal {
+        top: 180px;
+        font-size: 30px;
+    }
+
+    .texto-home {
+        top: 250px;
+        font-size: 18px;
     }
 
     .mi-boton {
         font-size: 14px;
         border-radius: 20px;
+        top: 850px;
+    }
+
+    .mi-imagen {
+        top: 460px;
     }
 
     .logo {
-        height: 100px; 
-        max-height: 100px; 
+        height: 100px;
+        max-height: 100px;
     }
 
     .container-fluid {
-        width: 90%; 
+        width: 90%;
         margin: 0;
         padding: 0;
     }
 }
-
-
