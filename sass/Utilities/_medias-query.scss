@@ -19,7 +19,7 @@
     /* Ajustes para el flujo de contenido principal */
     main {
         display: block;
-        padding: 16px;
+        padding: 0%;
         position: relative;
         min-height: calc(100vh - 100px);
 
@@ -32,14 +32,16 @@
         position: absolute;
     }
 
+
     .Titulo-principal {
-        top: 180px;
+        top: 30px;
         font-size: 30px;
     }
 
     .texto-home {
-        top: 250px;
+        top: 300px;
         font-size: 18px;
+        text-align: center;
     }
 
     .mi-boton {

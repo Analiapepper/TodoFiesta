@@ -8,11 +8,15 @@
   text-decoration: none;
 }
 
+h1,
 h2 {
   font-size: 35px;
   text-align: center;
+}
+
+h1 {
   margin: 40px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 h3 {
@@ -66,16 +70,16 @@ main {
 }
 
 .Titulo-principal {
-  top: 300px;
-  margin-left: 80px;
+  top: 150px;
+  margin-left: 85px;
 }
 
 .texto-home {
-  top: 400px;
+  top: 450px;
   text-align: center;
   font-size: 30px;
   width: 400px;
-  margin-left: 92px;
+  margin-left: 70px;
 }
 
 .mi-imagen {
@@ -329,7 +333,7 @@ footer .suscribite input {
   /* Ajustes para el flujo de contenido principal */
   main {
     display: block;
-    padding: 16px;
+    padding: 0%;
     position: relative;
     min-height: calc(100vh - 100px);
   }
@@ -340,12 +344,13 @@ footer .suscribite input {
     position: absolute;
   }
   .Titulo-principal {
-    top: 180px;
+    top: 30px;
     font-size: 30px;
   }
   .texto-home {
-    top: 250px;
+    top: 300px;
     font-size: 18px;
+    text-align: center;
   }
   .mi-boton {
     font-size: 14px;
