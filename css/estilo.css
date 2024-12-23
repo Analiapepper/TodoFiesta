@@ -87,6 +87,14 @@ main {
   height: auto;
 }
 
+.Titulo-principal {
+  font-size: 3rem;
+  transition: transform 1.5s ease, font-size 1s ease;
+}
+.Titulo-principal:hover {
+  transform: translate(100px) scale(1.5);
+}
+
 header {
   background-color: rgba(240, 248, 18, 0.7);
   width: 100%;

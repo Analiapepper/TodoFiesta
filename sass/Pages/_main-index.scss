@@ -28,3 +28,14 @@
     height: auto;
    
 }
+
+.Titulo-principal {
+    font-size: 3rem; 
+    transition: transform 1.5s ease, font-size 1s ease;  
+  
+    &:hover {
+      transform: translate(100px) scale(1.5);  
+    }
+  }
+  
+  
